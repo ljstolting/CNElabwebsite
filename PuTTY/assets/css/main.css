@@ -197,7 +197,7 @@ input, select, textarea {
 		}
 
 			h1.major:after {
-				background-image: "Easylogo.jpg"
+				background-image: "Easylogo.jpg";
 				/*background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
 				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
 				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
@@ -3790,11 +3790,11 @@ input, select, textarea {
 			}
 
 			#sidebar nav a:hover {
-				color: #FDF0D5;
+				color: #fff5e0;
 			}
 
 			#sidebar nav a.active {
-				color: #FDF0D5;
+				color: #fff5e0;
 			}
 
 				#sidebar nav a.active:after {
