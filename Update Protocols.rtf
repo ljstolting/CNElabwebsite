@@ -1,0 +1,44 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2759
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;\f2\fnil\fcharset0 Menlo-Regular;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\csgray\c0;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{hyphen\}}{\leveltext\leveltemplateid2\'01\uc0\u8259 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b\fs24 \cf0 \ul \ulc0 Prerequisites:\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls1\ilvl0
+\f1\b0 \cf0 \ulnone {\listtext	\uc0\u8226 	}Must be an approved developer on the lab\'92s IU groups account (\'93easy\'94, owned by Randy)\
+{\listtext	\uc0\u8226 	}Download Ivanti Secure Access Client through IU and be approved to log in to the groups VPN\
+{\listtext	\uc0\u8226 	}Appropriate private and public keys generated and placed on the server (UITS has guides)\
+\pard\tx940\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li1440\fi-1440\pardirnatural\partightenfactor0
+\ls1\ilvl1\cf0 {\listtext	\uc0\u8259 	}Apparently the one I currently use is in the .ssh hidden folder under my user profile (the ones in the actual lab website directory appear to be useless from a previous attempt but I don\'92t want to delete them)\
+{\listtext	\uc0\u8259 	}There should in theory be ways to do it without a key pair from on campus, but the information on UITS is outdated and none of the methods seem to work anymore\
+\pard\tx220\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\li720\fi-720\pardirnatural\partightenfactor0
+\ls1\ilvl0\cf0 {\listtext	\uc0\u8226 	}Lab Website GitHub directory copied on local machine\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+
+\f0\b \ul Update steps:
+\f1\b0 \ulnone \
+1. Connect to IU Groups VPN\
+	a. Enter personal password\
+	b. Enter \'93push\'94 and accept Duo authentication\
+2. Ensure that local copy of GitHub repository is up to date with changes\
+3. Open terminal and enter: 
+\f2\fs22 \cf2 \CocoaLigature0 sftp -i /Users/LJSbo/.ssh/id_rsa easy@ssh.sitehost.iu.edu\
+
+\f1\fs24 	a. Key passphrase is personal IU password \
+4. Navigate to web directory on server and GitHub repository directory on local machine (using cd and lcd respectively)\
+5. Enter: 
+\f2\fs22 put localfilename.html 
+\f1\fs24 for all files you have updated
+\f2 \
+
+\f1 6. 
+\f2\fs22 quit
+\fs24  
+\f1 to log out}
